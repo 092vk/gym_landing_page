@@ -1,0 +1,96 @@
+/* 1.css reset */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("./img/hero.jpg");
+    background-size: cover;
+}
+/* 2.creating the css for header  */
+/* a.creting the css for left  */
+.left{
+    /* border:2px solid yellow ; */
+    color: blue;
+    display: inline-block;
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+
+}
+/* styling logo */
+.left img{
+    width: 5rem;
+}
+/* creting css for middle  */
+.middle{
+    /* border: 2px solid blue; */
+    color:burlywood;
+    display: block;
+    width: 33%;
+    /* here auto ensures that margin is equal from all sides , even though margin is 1 rem it is between left and right because of equal distribution  */
+    margin: 1rem auto;
+    /* border: 1rem; */   
+}
+/* creating css for right  */
+.right{
+    /* border: 2px solid brown; */
+    color: yellow;
+    display: inline-block;
+    position: absolute;
+    right: 5rem;
+    top: 1rem;
+}
+/* styling the nav bar and its lists and contents  */
+/* to set them inline-block we will target the individual lists */
+.navbar li{
+    display: inline-block;
+}
+/* to change the color of list text and to remove the underline we have to target anchor tag within each list */
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 0rem 1.5rem;
+    /* if value is assigned to padding for 1-all, 2-top/bottom , left/right, 3-top,left/right,bottom,4-top,right,bottom,left */
+    font-size: 1rem;
+}
+.navbar li a:hover,
+.navbar li a:active{
+    text-decoration: underline;
+    color: grey;
+}
+
+/* styling the buttons on the right side  */
+.btn{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    /* this makes the cursor pointer when we put mouse on it */
+    /* border:2px solid yellow; */
+    border-radius: 10px;
+    margin: 0px 9px;
+    padding: 0px 14px;
+    font-size: 1rem;  
+}
+.btn:hover{
+    background-color: white;
+    color: blue;
+}
+
+/* styling the message in the hero image */
+.message{
+    width: 45%;
+    color: white;
+    /* border: 2px solid white; */
+    padding: 0px 2px;
+    margin: 10rem 2rem;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+.two{
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    color: rgb(235, 235, 170);
+}
+.one{
+    border-top: 0px;
+    padding-top:0px;
+}
